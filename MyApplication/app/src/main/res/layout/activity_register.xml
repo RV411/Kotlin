@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".RegisterActivity">
+    <data>
+        <variable
+            name="clickListener"
+            type="android.view.View.OnClickListener" />
+        <variable
+            name="title_1"
+            type="String" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbarRegister"
+        layout="@layout/toolbar" />
+
+    <TextView
+        android:id="@+id/tvMsg1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:text="@string/text_register1"
+        tools:ignore="MissingConstraints" />
+    <TextView
+        android:id="@+id/tvMsg2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:text="@string/text_register2"
+        tools:ignore="MissingConstraints" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_marginTop="10dp"
+        android:id="@+id/etName"
+        style="@style/EditText"
+        android:drawableStart="@drawable/bxs_user"
+        android:hint="@string/usr_hint"
+        android:inputType="textEmailAddress"
+        />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_marginTop="10dp"
+        android:id="@+id/et"
+        style="@style/EditText"
+        android:drawableStart="@drawable/ic_email"
+        android:hint="@string/email_hint"
+        android:inputType="textEmailAddress"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/RtilPwd"
+        style="@style/NoFilterTextInputLayoutStyle"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/hintColor">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/RetPwd"
+            style="@style/EditText"
+            android:hint="@string/nip_hint"
+            android:inputType="textPassword"
+            android:imeOptions="flagNoEnterAction"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilPwd"
+        style="@style/NoFilterTextInputLayoutStyle"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/hintColor">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etPwd"
+            style="@style/EditText"
+            android:hint="@string/renip_hint"
+            android:inputType="textPassword"
+            android:imeOptions="flagNoEnterAction"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="@string/register_term"
+        android:buttonTint="@color/black"
+        android:textColor="@color/darkPink"
+        />
+
+    <Button
+        android:id="@+id/btOne"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/tvMsg"
+        android:textColor="@color/black"
+        android:background="@drawable/button_bg"
+        android:text="@string/Label_btn_ac"
+        tools:ignore="MissingConstraints" />
+    </LinearLayout>
+</layout>

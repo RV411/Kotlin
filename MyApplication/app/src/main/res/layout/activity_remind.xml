@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".RemindActivity">
+
+    <data>
+        <variable
+            name="clickListener"
+            type="android.view.View.OnClickListener" />
+        <variable
+            name="title_1"
+            type="String" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbarRemind"
+        layout="@layout/toolbar" />
+
+    <TextView
+        android:id="@+id/tvMsg1"
+        android:layout_marginTop="180dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:text="@string/Label_text_rbk1"
+        tools:ignore="MissingConstraints" />
+    <TextView
+        android:id="@+id/tvMsg2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:text="@string/Label_text_rbk2"
+        tools:ignore="MissingConstraints" />
+
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_marginTop="10dp"
+        android:id="@+id/et"
+        style="@style/EditText"
+        android:drawableStart="@drawable/ic_email"
+        android:hint="@string/email_hint"
+        android:inputType="textEmailAddress"
+        />
+
+    <Button
+        android:id="@+id/btOne"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/tvMsg"
+        android:textColor="@color/black"
+        android:background="@drawable/button_bg"
+        android:text="@string/Label_btn_rbk"
+        tools:ignore="MissingConstraints" />
+    </LinearLayout>
+</layout>

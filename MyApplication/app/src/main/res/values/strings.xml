@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Aplicacion1</string>
+    <string name="title">Bienvenido</string>
+    <string name="description">Por favor complete todos los detalles</string>
+    <string name="Rbr_pwd">¿Olvidaste tu contraseña?</string>
+    <string name="register">Registrate</string>
+    <string name="text_register1">los siguientes datos para registrarte</string>
+    <string name="text_register2">siguientes datos para registrarte</string>
+    <string name="register_term">Acepto terminos y condiciones</string>
+    <string name="Label_btn_one">Iniciar</string>
+    <string name="Label_btn_ac">Registrar</string>
+    <string name="Label_text_rbk1">Recupera tu contraseña enviando tu correo</string>
+    <string name="Label_text_rbk2">electronico para iniciar tu recuperacion</string>
+    <string name="Label_btn_rbk">Recuperar</string>
+    <string name="usr_hint">Usuario</string>
+    <string name="nip_hint">Contraseña</string>
+    <string name="renip_hint">Confirmar contraseña</string>
+    <string name="email_hint">Correo</string>
+    <string name="mn_chk">Check In</string>
+    <string name="mn_ts">Tareas</string>
+    <string name="mn_nt">Notificaciones</string>
+    <string name="mn_ntc">Noticias</string>
+    <string name="mn_pfl">Perfil</string>
+
+    <string name="chk_text">Ingresa la hora de entrada</string>
+    <string name="chk_conf">Confirmar</string>
+
+    <string name="title_1">Prueba</string>
+    <string name="title_2">Otra prueba</string>
+    <string name="title_3">Test</string>
+    <string name="text_info1">Descripción primera</string>
+    <string name="text_info2">Es otra descripción para el segundo</string>
+    <string name="text_info3">Tercera descripción para las pruenas</string>
+
+
+    <!-- WS mensa-->
+    <string name="extra_mensajeespera">Espera un momento</string>
+    <string name="error_communication">"Lo sentimos tenemos problemas para comunicarnos con la plataforma, por favor  intenta más tarde"</string>
+    <string name="error_unexpected">"Ocurrió un error insesperado, intenta de nuevo mas tarde"</string>
+</resources>

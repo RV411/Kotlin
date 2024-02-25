@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".RemindActivity">
+
+    <data>
+        <variable
+            name="clickListener"
+            type="android.view.View.OnClickListener" />
+        <variable
+            name="title_1"
+            type="String" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbarCheck"
+            layout="@layout/toolbar" />
+
+        <TextView
+            android:id="@+id/tvMsg1"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/black"
+            android:layout_marginStart="15dp"
+            android:textSize="20dp"
+            android:text="@string/chk_text"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/spHr"
+            style="@style/SpinnerStyle"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="50dp"
+            android:gravity="center_vertical"
+            android:onClick="@{(v)->clickListener.onClick(v)}"
+            android:hint="Hora" />
+
+        <EditText
+            android:id="@+id/edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:inputType="text|textMultiLine"
+            android:hint="Nota"
+            android:layout_marginTop="20dp"
+            android:gravity="top"/>
+
+        <Button
+            android:id="@+id/btOne"
+            android:layout_marginTop="200dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/tvMsg"
+            android:textColor="@color/white"
+            android:background="@drawable/button_blue2"
+            android:onClick="@{(v)->clickListener.onClick(v)}"
+            android:text="@string/chk_conf"
+            tools:ignore="MissingConstraints" />
+    </LinearLayout>
+</layout>
